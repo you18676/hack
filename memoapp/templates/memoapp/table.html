@@ -1,0 +1,5 @@
+<h1>tablepage</h1>
+
+{% for memo in memos.all %}
+<h1><a href="{% url 'detail' memo.id %}">{{ memo.title }}</a></h1>
+{% endfor %}

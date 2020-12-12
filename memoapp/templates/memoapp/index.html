@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<html>
+
+<head>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style>
+        @font-face {
+            font-family: 'MapoGoldenPier';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'MapoGoldenPier';
+            color: wheat
+        }
+
+        .title {
+            width: 500px;
+            margin-left: 10px;
+            margin-right: auto;
+            text-align: left;
+
+        }
+
+        .button {
+            width: 500px;
+            margin-right: 10px;
+            margin-left: auto;
+            text-align: right;
+
+        }
+
+        .contents {
+            text-align: center;
+            color: dimgray
+        }
+    </style>
+</head>
+
+<body>
+    <a href="table" class="btn btn-primary" role="button">
+        <h2>글쓰기</h2>
+    </a>
+    <div class="title">
+        <h1>마포금빛나루</h1>
+    </div>
+    <div class="button">
+        <a href="new" class="btn btn-primary" role="button">시작하기</a>
+
+    </div>
+    <div class="contents">
+        <h2>My contents</h2>
+    </div>
+    <img alt="사진" src="{% static 'image/파리야경.jpg' %}" />
+</body>
+
+<br>
+<br><br><br><br><br>
+
+</html>
+
+{% endblock %}
